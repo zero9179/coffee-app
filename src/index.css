@@ -1,0 +1,53 @@
+@import "tailwindcss";
+/* *{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  box-sizing: border-box;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Playfair Display',serif;
+  letter-spacing: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+#sec1-container {
+  background-image: url("/public/assets/coffee_image.png");
+  background-size: cover;
+  background-position: center;
+}
+#sec5-container {
+  background-image: url("public/assets/Group 46.png");
+  background-size: cover;
+  background-position: center;
+}
+#footer-top-container{
+   background-image: url("public/assets/Group 46.png");
+  background-size: cover;
+  background-position: center;
+}
+#footer-bottom-container{
+  background-image: url("public/assets/fotter_image.png");
+  background-size: cover;
+  background-position: center;
+
+}
+#coffe-title{
+  font-family: "Clicker Script", cursive;
+}
+.textColor{
+  color: #5b3620;
+}
+.secColor{
+  color:rgb(153, 149, 149)
+}
