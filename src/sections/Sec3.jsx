@@ -29,7 +29,7 @@ function Sec3() {
   ];
 
   return (
-    <section className="bg-white w-full min-h-screen p-6 md:px-16">
+    <section className="relative bg-white w-full min-h-screen p-6 md:px-16">
       {/* Section Heading */}
       <div className="text-center">
         <h1 className="textColor text-3xl sm:text-4xl md:text-5xl font-bold py-3">
@@ -57,12 +57,11 @@ function Sec3() {
         </div>
       </div>
 
-      {/* Background Image */}
-      {/* <img
-        className="absolute right-0 bottom-0 w-40 sm:w-60 md:w-80 lg:w-96 opacity-80"
+      <img
         src="/assets/coffee_blast (1).png"
         alt="coffee blast"
-      /> */}
+        className="absolute z-1 w-[50%] sm:w-[40%] md:w-[30%] right-0 -translate-y-1/3 "
+      />
     </section>
   );
 }

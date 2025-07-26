@@ -5,7 +5,7 @@ function Sec2() {
   return (
     <section
       id="sec2-container"
-      className="bg-white w-full min-h-[60%] lg:min-h-screen  px-6 md:px-16 py-10 flex flex-col md:flex-row items-center justify-center "
+      className="relative bg-white w-full min-h-[60%] lg:min-h-screen  px-6 md:px-16 py-10 flex flex-col md:flex-row items-center justify-center "
     >
       {/* Left Text Content */}
       <div className="w-full md:w-[60%] mb-10 md:mb-0 text-center md:text-left">
@@ -31,12 +31,12 @@ function Sec2() {
         />
       </div>
 
-      {/* Background or Decorative Image */}
-      {/* <img
+      
+      <img
         src="/assets/coffee_blast.png"
         alt="coffee blast"
-        className="absolute left-0 -bottom-12 w-40 sm:w-52 md:w-64 lg:w-96 opacity-80"
-      /> */}
+        className="absolute z-1 w-[50%] sm:w-[40%] md:w-[30%] left-0 -bottom-12 "
+      />
     </section>
   );
 }

@@ -20,14 +20,14 @@ function Footer() {
             Suscribe
           </button>
         </div>
-        {/* <img className="absolute left-0 -bottom-32" src="public/assets/pngwing 1.png" alt="" /> */}
-        {/* <img className="absolute right-0 -bottom-32" src="public/assets/pngwing 2.png" alt="" /> */}
+        <img className="w-[20%] absolute left-0 -translate-y-1/3 " src="./../assets/pngwing 1.png" alt="" />
+        <img className="w-[20%] absolute right-0 -translate-y-1/3" src="./../assets/pngwing 2.png" alt="" />
 
       </div>
 
 {/* ====================foooter-bottom======================== */}
       <div id="footer-bottom-container" className="w-full bg-amber-900 sm:py-16 sm:pt-40 p-6 md:px-16">
-        <section className=" p-2 grid grid-cols-3 sm:grid-cols-5 gap-6 text-white bg-[#281b1b21]">
+        <section className="z-1 p-2 grid grid-cols-3 sm:grid-cols-5 gap-6 text-white bg-[#281b1b21]">
           <div className=" col-span-3 sm:col-span-2">
             <h1 style={{ fontFamily: "Clicker Script, cursive" }} className="text-2xl md:text-5xl mb:mb-8">Bean Scene</h1>
             <p className="mb:mb-6 text-xs mb:text-base [hyphens:auto] break-words sm:w-[70%]">
