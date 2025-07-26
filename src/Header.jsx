@@ -4,7 +4,6 @@ import { BiMenuAltLeft } from "react-icons/bi"; // hamburger icon
 import { IoClose } from "react-icons/io5"; // close icon
 import Button from "./components/Button";
 
-
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,7 +23,9 @@ const Header = () => {
           <p>Menu</p>
           <p>About Us</p>
           <Link to="/form">
-            <p className="underline decoration-2 decoration-green-400 underline-offset-6">Contact Us</p>
+            <p className="underline decoration-2 decoration-green-400 underline-offset-6">
+              Contact Us
+            </p>
           </Link>
         </div>
 
@@ -49,7 +50,9 @@ const Header = () => {
           <p>Menu</p>
           <p>About Us</p>
           <Link to="/form">
-            <p>Contact Us</p>
+            <p className="underline decoration-2 decoration-green-400 underline-offset-6">
+              Contact Us
+            </p>
           </Link>
           <hr className="border-white/40" />
           <p>Sign in</p>

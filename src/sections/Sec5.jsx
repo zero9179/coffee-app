@@ -6,7 +6,7 @@ function Sec5() {
   return (
     <section
       id="sec5-container"
-      className="relative  w-full h-[45vh] sm:h-[60vh] lg:h-[100vh]  px-16 flex  "
+      className="relative  w-full h-[45vh] sm:h-[60vh] lg:h-[100vh] px-6  md:px-16 flex  "
     >
       <div className="w-full h-full text-white z-1 flex flex-col justify-center  gap-4 sm:gap-8">
         <h1 className="text-xl sm:text-3xl md:text-5xl font-semibold">

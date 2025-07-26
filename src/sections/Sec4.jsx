@@ -41,14 +41,14 @@ function Sec4() {
       {/* Features Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14">
         {coffeeFeatures.map((item, index) => (
-          <din key={index} className="flex justify-center">
+          <div key={index} className="flex justify-center">
           <CoffeeFeaturesCard
             key={index}
             icon={item.icon}
             description={item.description}
             title={item.title}
           />
-          </din>
+          </div>
         ))}
       </div>
 

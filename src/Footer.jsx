@@ -1,35 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState();
+  const hahdleSub = () => {
+    if (email.includes("@") === true) {
+      localStorage.setItem("email", email);
+    } else {
+      alert("Please enter a valid email");
+    }
+    if (email.includes("@gmail.com") === true) {
+      navigate("/form");
+    }
+  };
   return (
     <footer className=" w-full">
-      <div id="footer-top-container" className="text-center md:py-16 p-6 md:px-16 text-white relative">
+      <div
+        id="footer-top-container"
+        className="text-center md:py-16 p-6 md:px-16 text-white relative"
+      >
         <h1 className="text-xl md:text-5xl py-3 font-bold">
           Subscribe to get the Latest News
         </h1>
         <p className="text-[0.6rem] md:text-base mb-6">
           Don't miss out on our latest news, updates, tips and spicial offers
         </p>
-        <div className="w-[150px] md:w-[500px] md:h-16 border-1 rounded-md overflow-hidden  flex mx-auto bg-amber-800 ">
+
+        <div className="w-[150px] md:w-[500px] md:h-16 border-1 rounded-md overflow-hidden  flex mx-auto bg-white">
           <input
-            type="text"
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            name="email"
             placeholder="Enter your mail"
-            className="bg-white px-2 pb-2 w-[70%] md:w-[80%] outline-none text-black placeholder-black placeholder:text-[0.5rem]"
+            className="bg-white px-2 pb-2 w-[70%] md:w-[80%] outline-none text-black placeholder-black placeholder:text-[0.5rem] md:placeholder:text-base"
           />
-          <button className="bg-yellow-300  font-semibold w-[30%] md:w-[20%] text-[0.5rem] md;text-base">
-            Suscribe
+          <button
+            onClick={hahdleSub}
+            className="bg-yellow-300  font-semibold w-[40%] md:w-[20%] text-[0.5rem] md:text-base hover:cursor-pointer text-black rounded-l-xl hover:bg-yellow-400 transition-all duration-200"
+          >
+            Contact Us
           </button>
         </div>
-        <img className="w-[20%] absolute left-0 -translate-y-1/3 " src="./../assets/pngwing 1.png" alt="" />
-        <img className="w-[20%] absolute right-0 -translate-y-1/3" src="./../assets/pngwing 2.png" alt="" />
 
+        <img
+          className="w-[20%] absolute left-0 -translate-y-1/3 "
+          src="./../assets/pngwing 1.png"
+          alt=""
+        />
+        <img
+          className="w-[20%] absolute right-0 -translate-y-1/3"
+          src="./../assets/pngwing 2.png"
+          alt=""
+        />
       </div>
 
-{/* ====================foooter-bottom======================== */}
-      <div id="footer-bottom-container" className="w-full bg-amber-900 sm:py-16 sm:pt-40 p-6 md:px-16">
+      {/* ====================foooter-bottom======================== */}
+      <div
+        id="footer-bottom-container"
+        className="w-full bg-amber-900 sm:py-16 sm:pt-40 p-6 md:px-16"
+      >
         <section className="z-1 p-2 grid grid-cols-3 sm:grid-cols-5 gap-6 text-white bg-[#281b1b21]">
           <div className=" col-span-3 sm:col-span-2">
-            <h1 style={{ fontFamily: "Clicker Script, cursive" }} className="text-2xl md:text-5xl mb:mb-8">Bean Scene</h1>
+            <h1
+              style={{ fontFamily: "Clicker Script, cursive" }}
+              className="text-2xl md:text-5xl mb:mb-8"
+            >
+              Bean Scene
+            </h1>
             <p className="mb:mb-6 text-xs mb:text-base [hyphens:auto] break-words sm:w-[70%]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
               culpa itaque debitis neque repellat ducimus beatae voluptas
@@ -50,23 +89,25 @@ function Footer() {
           </div>
 
           <div className="border-r border-white">
-            <h1 className="text-sm md:text-2xl font-semibold md:mb-9">Company</h1>
+            <h1 className="text-sm md:text-2xl font-semibold md:mb-9">
+              Company
+            </h1>
             <div className="text-[.5rem] md:text-sm font-semibold flex flex-col md:gap-3">
-                <p>How we work</p>
-                <p>Terms of services</p>
-                <p>Pricing</p>
-                <p>FAQ</p>
+              <p>How we work</p>
+              <p>Terms of services</p>
+              <p>Pricing</p>
+              <p>FAQ</p>
             </div>
           </div>
           <div>
-            <h1 className="text-sm md:text-2xl font-semibold md:mb-9">Contact US</h1>
+            <h1 className="text-sm md:text-2xl font-semibold md:mb-9">
+              Contact US
+            </h1>
             <div className="text-[.5rem] md:text-sm font-semibold flex flex-col  md:gap-3">
-                <p>
-                    Lorem ipsum dolor sit amet consectetu
-                </p>
-                <p>+91 0000000000</p>
-                <p>beanscene@mail.com</p>
-                <p>www.beanscene.com</p>
+              <p>Lorem ipsum dolor sit amet consectetu</p>
+              <p>+91 0000000000</p>
+              <p>beanscene@mail.com</p>
+              <p>www.beanscene.com</p>
             </div>
           </div>
         </section>

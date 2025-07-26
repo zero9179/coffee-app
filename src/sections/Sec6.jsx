@@ -19,7 +19,7 @@ function Sec6() {
       <div className="flex relative flex-col items-center justify-center w-full">
         <div className="w-full sm:w-[70%] h-fit border-1 border-amber-500 text-center p-1 sm:px-4 md:px-16">
           <div className="size-10 sm:size-15 md:size-20">
-            <FaQuoteLeft size="full" color="#5b3620" />
+            <FaQuoteLeft className="w-full h-full text-[#5b3620]" />
           </div>
 
           <p className="secColor text-xs [hyphens:auto] break-words md:text-lg  lg:text-xl my-5">
