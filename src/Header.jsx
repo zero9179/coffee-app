@@ -23,7 +23,7 @@ const Header = () => {
           <p>Menu</p>
           <p>About Us</p>
           <Link to="/form">
-            <p className="underline decoration-2 decoration-green-400 underline-offset-6">
+            <p className="underline decoration-2 decoration-green-400 underline-offset-6 hover:text-green-100">
               Contact Us
             </p>
           </Link>
@@ -50,7 +50,7 @@ const Header = () => {
           <p>Menu</p>
           <p>About Us</p>
           <Link to="/form">
-            <p className="underline decoration-2 decoration-green-400 underline-offset-6">
+            <p className="underline decoration-2 decoration-green-400 underline-offset-6 hover:text-green-100">
               Contact Us
             </p>
           </Link>
