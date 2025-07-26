@@ -9,27 +9,27 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed z-[999] w-full h-18 px-6 sm:px-16 flex items-center justify-between bg-[#4b3e256c]">
+    <header className="fixed z-[999] w-full h-16 px-6 sm:px-16 flex items-center justify-between bg-[#4b3e256c]">
       <h1
         style={{ fontFamily: "Clicker Script, cursive" }}
-        className="text-3xl sm:text-4xl md:text-5xl text-white"
+        className="text-3xl sm:text-4xl md:text-2xl lg:text-4xl text-white"
       >
         Bean Scene
       </h1>
 
       {/* Desktop Nav */}
       <nav className="hidden md:flex w-[65%] md:w-[70%] lg:w-[65%] justify-between items-center">
-        <div className="flex items-center gap-10 lg:gap-16 text-white text-sm lg:text-lg">
+        <div className="flex items-center gap-[1rem] lg:gap-16 text-white text-sm lg:text-md">
           <p>Home</p>
           <p>Menu</p>
           <p>About Us</p>
           <Link to="/form">
-            <p>Contact Us</p>
+            <p className="underline decoration-2 decoration-green-400 underline-offset-6">Contact Us</p>
           </Link>
         </div>
 
         <div className="flex items-center gap-4">
-          <p className="text-white">Sign in</p>
+          <p className="text-white text-sm lg:text-md">Sign in</p>
           <Button text="Sign Up" />
         </div>
       </nav>

@@ -13,8 +13,10 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
   overflow-x: hidden;
-  font-family: 'Playfair Display',serif;
+
+  font-family: "Playfair Display", serif;
   letter-spacing: 1px;
 }
 
@@ -25,29 +27,30 @@ body {
   background-image: url("/public/assets/coffee_image.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 #sec5-container {
-  background-image: url("public/assets/Group 46.png");
+  background-image: url("./../assets/Group_46.png");
   background-size: cover;
   background-position: center;
 }
-#footer-top-container{
-   background-image: url("public/assets/Group 46.png");
+#footer-top-container {
+  background-image: url("./../assets/Group_46.png");
   background-size: cover;
   background-position: center;
 }
-#footer-bottom-container{
-  background-image: url("public/assets/fotter_image.png");
-  background-size: cover;
-  background-position: center;
-
+#footer-bottom-container {
+  background-image: url("./../assets/fotter_image.png");
+  background-size: contain;
+  background-position:bottom;
+  background-repeat: no-repeat;
 }
-#coffe-title{
+#coffe-title {
   font-family: "Clicker Script", cursive;
 }
-.textColor{
+.textColor {
   color: #5b3620;
 }
-.secColor{
-  color:rgb(153, 149, 149)
+.secColor {
+  color: rgb(153, 149, 149);
 }

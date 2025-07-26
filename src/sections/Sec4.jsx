@@ -27,32 +27,34 @@ function Sec4() {
   ];
 
   return (
-    <section className="bg-white w-screen min-h-screen px-6 md:px-16 py-16">
+    <section className="bg-white w-full min-h-screen px-6 md:px-16 py-16">
       {/* Title */}
       <div className="text-center mb-10">
         <h1 className="textColor text-3xl sm:text-4xl md:text-5xl font-bold py-3">
           Why are we different?
         </h1>
-        <p className="secColor text-base sm:text-lg md:text-xl text-gray-700">
+        <p className="secColor text-base sm:text-lg md:text-base text-gray-700">
           We don't just make your coffee, we make your day!
         </p>
       </div>
 
       {/* Features Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-14">
         {coffeeFeatures.map((item, index) => (
+          <din key={index} className="flex justify-center">
           <CoffeeFeaturesCard
             key={index}
             icon={item.icon}
             description={item.description}
             title={item.title}
           />
+          </din>
         ))}
       </div>
 
-      {/* CTA Section */}
+      
       <div className="text-center pt-10 px-4">
-        <p className="secColor text-base sm:text-lg md:text-xl text-gray-600">
+        <p className="secColor text-base sm:text-lg md:text-xl ">
           Great ideas start with great coffee. Let’s help you achieve that
         </p>
         <h1 className="textColor text-2xl sm:text-3xl md:text-4xl mt-2 mb-4 font-semibold">
