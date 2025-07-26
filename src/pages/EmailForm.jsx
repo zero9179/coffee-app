@@ -13,7 +13,11 @@ function EmailForm() {
   const [contactNo, setContactNo] = useState("");
 
   const handleSubmit = (e) => {
-    return (alert("Emailjs is OFF!"));
+    return (
+      navigate("/") ||
+      alert("Emailjs is OFF!") ||
+      localStorage.removeItem("email")
+    );
 
     e.preventDefault();
     const templateParams = {
